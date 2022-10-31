@@ -47,7 +47,7 @@ yarn add --dev copyfiles
 ``` bash
 yarn add --dev semantic-release
 ```
-# plugins 
+# add semantic versioning plugins to package.json 
 ```json
 "plugins": [
   "@semantic-realease/commit-analizer",
