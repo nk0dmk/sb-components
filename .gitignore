@@ -13,8 +13,6 @@
 /dist
 /storybook-static
 
-yarn.lock
-
 # misc
 .DS_Store
 .env.local
@@ -29,3 +27,5 @@ yarn-error.log*
 
 #envs
 .env
+
+yarn.lock
