@@ -58,3 +58,12 @@ yarn add --dev semantic-release
   "@semantic-realease/git"
 ]
 ```
+
+# Semantic versioning usage
+
+|Commit message | Release type |
+|---|---|
+| __fix__(pencil): stop graphite breaking when too much pressure applied | Patch Fix Release |
+| __feat__(pencil): add 'graphiteWidth' option| Minor Feature Release |
+| __perf__(pencil): remove graphiteWidth option<br><br>__BREAKING CHANGE__: The graphiteWidth option has been removed.<br>The default graphite width of 10mm is always used for performance reasons.| Major Breaking Release (Note that the BREAKING CHANGE: token must be in the footer of the commit) | 
+
