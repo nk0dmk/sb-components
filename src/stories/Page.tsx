@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Header } from './Header';
 import './page.css';
 
@@ -7,16 +5,26 @@ type User = {
   name: string;
 };
 
-export const Page: React.VFC = () => {
-  const [user, setUser] = React.useState<User>();
+export interface PageProps {
+  user?: User,
+  onLogin: () => void,
+  onLogout: () => void,
+  onCreateAccount: () => void,
+}
+// export const Page: React.VFC = () => {
+export const Page = ({user, onLogin, onLogout, onCreateAccount}: PageProps) => {
+  // const [user, setUser] = React.useState<User>();
 
   return (
     <article>
       <Header
         user={user}
-        onLogin={() => setUser({ name: 'Jane Doe' })}
-        onLogout={() => setUser(undefined)}
-        onCreateAccount={() => setUser({ name: 'Jane Doe' })}
+        // onLogin={() => setUser({ name: 'Jane Doe' })}
+        onLogin={onLogin}
+        // onLogout={() => setUser(undefined)}
+        onLogout={onLogout}
+        // onCreateAccount={() => setUser({ name: 'Jane Doe' })}
+        onCreateAccount={onCreateAccount}
       />
 
       <section>

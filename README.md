@@ -15,6 +15,7 @@ yarn build
 ```
 
 # [Chromatic](https://www.chromatic.com)
+> **Bonus**
 
 ``` bash
 # yarn install chromatic 
@@ -29,3 +30,31 @@ npx chromatic --project-token=<chromatic_project_token>
 
 # next runs of chromatic
 yarn chromatic
+```
+
+# Install Typescript as global package
+```bash
+sudo nmp i -g typescript
+```
+
+# Install packages for custom build
+``` bash
+yarn add --dev rimraf
+yarn add --dev copyfiles
+```
+
+# Install packages for automatic semantic versioning
+``` bash
+yarn add --dev semantic-release
+```
+# plugins 
+```json
+"plugins": [
+  "@semantic-realease/commit-analizer",
+  "@semantic-realease/release-notes-generator",
+  "@semantic-realease/changelog",
+  "@semantic-realease/github",
+  "@semantic-realease/npm",
+  "@semantic-realease/git"
+]
+```
