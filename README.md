@@ -67,3 +67,6 @@ yarn add --dev semantic-release
 | __feat__(pencil): add 'graphiteWidth' option| Minor Feature Release |
 | __perf__(pencil): remove graphiteWidth option<br><br>__BREAKING CHANGE__: The graphiteWidth option has been removed.<br>The default graphite width of 10mm is always used for performance reasons.| Major Breaking Release (Note that the BREAKING CHANGE: token must be in the footer of the commit) | 
 
+
+> **Warn**
+> add yarn.lock to .gitignore file if you have local yarn registry
